@@ -1,0 +1,108 @@
+/* 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"); */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+} */
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transition: 0.5s;
+} */
+
+.top-navigation {
+    /* position: relative; */
+    border-radius: 40px;
+    background-color: transparent;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+
+}
+
+.top-navigation ul {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #333333;
+    bottom: 0;
+
+
+}
+
+.top-navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.top-navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.top-navigation ul li a .icon {
+    font-size: 24px;
+    line-height: 75px;
+    transition: 0.5s;
+    /* border: 2px solid rgb(68, 239, 16); */
+
+}
+
+.top-navigation ul li.active a .icon {
+    color: #fff;
+}
+
+.top-navigation ul li a .title {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.top-navigation ul li:hover a .title {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 50%);
+}
+
+.top-navigation ul .indicator {
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    transition: all 0.5s;
+}
+
+.top-navigation ul .indicator .indicator-circle {
+    position: absolute;
+    top: 50%;
+    left: 115%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
