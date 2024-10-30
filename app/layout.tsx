@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import Footer from "./_section/Footer";
 import Hero from "./_section/Hero";
-import TopNavigationDesktop from "./components/navigation/TopNavigationDesktop";
 import BottomNavigationMobile from "./components/navigation/BottomNavigationMobile";
+import TopNavigationDesktop from "./components/navigation/TopNavigationDesktop";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -23,11 +24,11 @@ export default function RootLayout({
           </div>
           <Hero />
           {children}
-          
+          <Footer />
         </div>
         <div className="sm:hidden">
             <BottomNavigationMobile />
-          </div>
+        </div>
       </body>
     </html>
   );
