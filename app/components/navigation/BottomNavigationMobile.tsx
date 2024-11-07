@@ -8,12 +8,18 @@ import { FaRegListAlt } from "react-icons/fa";
 import { PiBriefcaseBold } from "react-icons/pi";
 import { FaAddressCard } from "react-icons/fa";
 
+interface NavItem {
+  title: string;
+  icon: JSX.Element;
+  color: string;
+}
+
 const BottomNavigationMobile: React.FC = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [bgColor, setBgColor] = useState("#dc143c");
+  const [activeIndex, setActiveIndex] = useState<number>(0);
+  const [bgColor, setBgColor] = useState<string>("#dc143c");
 
   // Define navigation items
-  const navItems = [
+  const navItems: NavItem[] = [
     { title: "Home", icon: <LuHome />, color: "#dc143c" },
     { title: "About", icon: <BiSupport />, color: "#3c40c6" },
     { title: "Messages", icon: <FaRegListAlt />, color: "#05c46b" },

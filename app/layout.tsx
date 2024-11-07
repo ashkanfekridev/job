@@ -3,6 +3,7 @@ import Hero from "./_section/Hero";
 import TopNavigationDesktop from "./components/navigation/TopNavigationDesktop";
 import BottomNavigationMobile from "./components/navigation/BottomNavigationMobile";
 import "./globals.css";
+import SearchBoxComponent from "./components/search-box/SearchBoxComponent"
 
 export const metadata: Metadata = {
   title: "Job Detective",
@@ -17,11 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body >
-        <div className=" mx-10">
+        <div className=" mx-8 sm:mx-16 ">
           <div className="hidden sm:block">
             <TopNavigationDesktop />
           </div>
           <Hero />
+          <SearchBoxComponent />
           {children}
           
         </div>
