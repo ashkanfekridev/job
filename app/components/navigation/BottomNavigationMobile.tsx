@@ -50,7 +50,7 @@ const BottomNavigationMobile: React.FC = () => {
         ))}
         <div
           className="indicator"
-          style={{ transform: `translateX(calc(85px * ${activeIndex}))` }}
+          style={{ transform: `translateX(calc(118% * ${activeIndex}))` }}
         >
           <div
             className="indicator-circle"

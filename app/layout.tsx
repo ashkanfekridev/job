@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import Footer from "./_section/Footer";
 import Hero from "./_section/Hero";
-import TopNavigationDesktop from "./components/navigation/TopNavigationDesktop";
 import BottomNavigationMobile from "./components/navigation/BottomNavigationMobile";
+import TopNavigationDesktop from "./components/navigation/TopNavigationDesktop";
 import "./globals.css";
 import SearchBoxComponent from "./components/search-box/SearchBoxComponent"
 
@@ -25,11 +26,11 @@ export default function RootLayout({
           <Hero />
           <SearchBoxComponent />
           {children}
-          
+          <Footer />
         </div>
         <div className="sm:hidden">
             <BottomNavigationMobile />
-          </div>
+        </div>
       </body>
     </html>
   );
